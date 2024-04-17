@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/CSS/site2.css">
+</head>
+
+<body>
+    <main class="login-main">
+        <h2>User Registration</h2>
+    </main>
+    <div class="container2">
+        <div class="login-page">
+            <form class="login-form">
+                <div class="input-group">
+
+                    <label for="userType">I am a:</label>
+                    <select id="userType" name="userType">
+                        <option value="new">New User</option>
+                        <option value="returning">Returning User</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+    
+                <button type="submit">Submit</button>
+                <p id="errorMessage" class="error-message"></p>
+    
+                <button type="reset">Clear</button>
+
+            </form>
+        </div>
+    </div>
+   
+    <script src="/js/reg.js"></script>
+</body>
+
+</html>

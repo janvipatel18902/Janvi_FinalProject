@@ -1,0 +1,1509 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap");
+body, h2, p,h1 
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+    /* background: #e9e8f0; */
+}
+
+/* below code for header */
+
+header{
+  background-color:  #FFB6C1;
+  grid-area: header;
+  height: max-content;
+}
+h1 {
+  margin: 0%;
+  padding: 0%;
+} 
+h1.site-title 
+{
+  color: #a67c00;
+  font-family: 'Segoe Script', cursive;
+  font-size: 2em;
+}
+
+/* below code for Navbar */
+
+nav{
+  grid-area: navbar;
+  background-color: #B0CBA8;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: #4a4949;
+  text-align: center;
+  padding: 30px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+li a:hover {
+  background-color: #95cb85;
+}
+
+/* Below code for Main */
+
+main{
+  background-color:   #e6e3e3;
+  grid-area: main;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin-top: 10px; */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+main h3{
+  color: #4a4949;
+  margin: auto;
+  padding-top: 1.6%;
+}
+
+/* Below code for Index Page */
+.container3{
+  display: grid;
+  height: 195vh;
+  grid-template-columns: 0.15fr 2fr;
+  grid-template-rows: 0.2fr 0.25fr 0.1fr 0.8fr 0.1fr 1.1fr;
+  grid-template-areas: "header header"
+  "navbar main"
+  "navbar heading1"
+  "navbar product"
+  "navbar heading2"
+  "navbar final-section";
+  text-align: center;
+  font-size: 1.5rem;
+}
+.container4 
+{
+  display: inline;
+}
+/* About Us*/
+
+/* Styling for the main description section */
+.main-description {
+  width:auto;
+  margin: auto auto;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+/* Styling for paragraphs */
+.main-description p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #434343;
+  /* color: #e6e3e3; */
+  margin-bottom: 10px;
+}
+/* Add some style to the last paragraph */
+.main-description p:last-of-type {
+  font-style: italic;
+}
+
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.register-container {
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+input {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+/* Styling for the heading */
+.heading-edit {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.product-edit{
+  grid-area: heading1;
+  font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab', serif;
+  margin-top: 20px;
+}
+.product-edit::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #007bff;
+  margin: 15px auto 0;
+  transition: all 1s ease;}
+
+
+  /* Product container styling */
+  .container4{
+    grid-area: product;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual product styling */
+  .product {
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:  #faf7f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-info {
+    padding: 10px 0;
+    grid-area: productinfo;
+  }
+  
+  .product-info h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .product-info p {
+    font-size: 14px;
+    color: #434343;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .designer-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:  #d964ee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .designer-button:hover {
+    background-color: #de7fed;
+  }
+  /* Styling for the Products section */
+.heading-edit{
+  grid-area: heading2;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Add a subtle underline */
+.heading-edit::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #007bff; 
+  margin: 15px auto 0;
+  transition: all 1s ease;
+}
+
+
+/* Last Section */
+/* General styling */
+.last {
+  background-image: url('/images/nail.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 230px;
+  text-align: center;
+  margin: auto;
+  opacity: 0.8;
+}
+.third-last {
+  background-image: url('/images/makeup.jpg'); 
+  background-size: cover; 
+  opacity: 0.9;
+  background-position: center; 
+ height: 230px;
+ text-align: center;
+ margin: auto;
+}
+.final-section {
+  grid-area: final-section;
+  display: flex;
+  justify-content:space-around;
+  width: 1200px; 
+  margin: auto;
+}
+
+.final-section > div {
+  flex: 1;
+  margin: 10px 10px 20px 10px;
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.final-section > div:hover {
+  transform: translateY(-5px);
+}
+
+.final-section > div h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #170d0d;
+}
+
+.final-section > div p {
+  font-size: 1rem;
+  color: #0a0808;
+  text-transform: uppercase;
+}
+
+.final-section > div a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #04090e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.final-section > div a:hover {
+  background-color: #3d3e3e;
+}
+@media only screen and (max-width: 320px) {
+  .last,
+  .third-last {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .final-section > div {
+    flex-basis: 100%; /* Set the item to occupy full width on smaller screens */
+    margin-bottom: 20px; /* Add some space between items on smaller screens */
+  }
+
+  .final-section > div h3 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .final-section > div p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) 
+{
+  /* Adjust styles for screen width between 321px and 365px */
+  .last,
+  .third-last {
+    height:fit-content; /* Adjust height for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px)
+ {
+  /* Adjust styles for screen width between 366px and 412px */
+  .last,
+  .third-last {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+
+/* Below code for Skincare Page */
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.45fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.35fr 1.3fr 1.3fr;
+    grid-template-areas: "header header header header"
+    "navbar main main main"
+    "navbar Box1 Box2 Box3"
+    "navbar Box4 Box5 Box6";
+    text-align: center;
+    font-size: 1.5rem;
+}
+.box1
+{
+    grid-area: Box1;
+    background-image: url('/images/clencer.jpg');
+    background-size: cover;
+    background-position: center; 
+    opacity: 0.9;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+}
+.box1 p{
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  font-size: 1.3em;
+}
+.box2{
+    background-color: rgb(179, 123, 40);
+    grid-area: Box2;
+    background-image: url('/images/bodyscrub.jpg');
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    background-position: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+
+}
+.box2 p{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 1.3em;
+}
+.box3
+{
+    grid-area: Box3;
+    background-image: url('/images/eye.jpg');
+    background-size: cover;
+    background-position: center; 
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+
+}
+.box3 p{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  font-size: 1.3em;
+}
+.box4
+{
+    grid-area: Box4;
+    background-image: url('/images/cream.webp');
+    background-size: cover;
+    background-position:center; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+
+}
+.box4 p{
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  font-size: 1.3em;
+}
+.box5{
+
+    grid-area: Box5;
+    background-image: url('/images/syrum.jpg');
+    background-size: cover;
+    background-position:center;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+
+}
+.box5 p{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  font-size: 1.3em;
+}
+.box6
+{
+    grid-area: Box6;
+    background-image: url('/images/facecream.webp');
+    background-size: cover;
+    background-position:center;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+  
+}
+.box6 p{
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  font-size: 1.3em;
+}
+
+/* Below Code For Brand Page */
+
+.container1{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.15fr 1fr;
+  grid-template-rows: 0.2fr 0.25fr 2fr;
+  grid-template-areas: "header header"
+  "navbar main"
+  "navbar slider";
+  text-align: center;
+  font-size: 1.5rem;
+}
+.slider{
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+img{
+  height: 200px;
+  width: 200px;
+}
+
+#slider{  
+  width:1000px;  
+  height:520px;  
+  overflow:hidden;  
+  margin-left: 16%;
+  margin-top: 1%;
+}  
+.slides{  
+  display:block;  
+  width:6000px;  
+  height:400px;  
+  margin-left:0;  
+  padding:0;  
+}  
+.slide{  
+  float:left;  
+  list-style-type:none;  
+  width:1000px;  
+}  
+img
+{  
+  width:1000px;  
+  height:540px;
+  object-fit: contain;
+}  
+
+/* Below Code For Footer */
+
+.site-footer {
+    background-image: linear-gradient(120deg,  #6b259d 1%, #f18e9d 100%);
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .logo img {
+    width: 200px; /* Set maximum width to prevent the image from scaling too large */
+    height: 200px;
+  }
+  
+  .navig ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .navig ul li a {
+    text-decoration: none;
+    color: hsl(0, 22%, 95%);
+    padding: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  .navig ul li a:hover {
+    background-color: hsl(332, 63%, 72%);
+    color: white;
+  }
+  
+  .contact p {
+    text-align: right;
+    color: white;
+  }
+  
+  .login a {
+    text-decoration: none;
+    color: #f1e4e4;
+  }
+  
+  .navig h3 {
+    color: #752948;
+    text-transform: uppercase;
+    padding-top: 7%;
+  }
+
+  /* Below Code for registration page */
+
+/* .form-container {
+  background: rgb(230, 127, 153);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    background-color: #180614;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+button:hover {
+    background-color: #6c6d71;
+}
+
+.error-message {
+    color: rgb(25, 19, 19);
+    text-align: center;
+}
+#registrationForm{
+ margin-left: 600px;
+
+} */
+
+ /* Below Code For Login Page */
+
+.login-main
+{
+  text-align: center;
+  padding-top: 0%;
+}
+
+  .container2
+  {
+    background-color: #d0e6ec;
+  }
+
+  .login-page {
+    height: 78vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .form {
+    position: relative;
+    /* filter: drop-shadow(0 0 2px #000000); */
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+    background-color: #ebd8e3;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .form img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 210px;
+    right: 60px;
+    cursor: pointer;
+  }
+  .form input {
+    outline: 0;
+    background: #f2f2f2;
+    border-radius: 4px;
+    width: 100%;
+    border: 0;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 14px;
+  }
+  .form input:focus {
+    box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+  }
+
+  .form button {
+    outline: 0;
+    background: #6a62d2;
+    width: 100%;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+.form button:hover,
+.form button:active,
+.form button:focus 
+{
+  background: black;
+  color: #fff;
+}
+.message 
+{
+  margin: 15px 0;
+  text-align: center;
+}
+.form .message a 
+{
+  font-size: 14px;
+  color: #6a62d2;
+  text-decoration: none;
+}
+
+/* Index Page last 2 section */
+
+.heading-edit{
+  font-size: 2rem;
+  text-align: center;
+  /* margin-bottom: 8px; */
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Add a subtle underline */
+.heading-edit::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #007bff; 
+  margin: 15px auto 0;
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width:1440px)
+{
+  .container3
+  {
+    height: 205vh;
+  }
+  .final-section {
+    grid-area: final-section;
+    display: flex;
+    justify-content:space-around;
+    width: 1100px; 
+    margin: auto;
+  }
+  .container1{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.15fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 2fr;
+    grid-template-areas: "header header"
+    "navbar main"
+    "navbar slider";
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #slider{  
+    width:1000px;  
+    height:520px;  
+    overflow:hidden;  
+    margin-left: 10%;
+    margin-top: 1%;
+  }  
+  .box1 p{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 1em;
+  }
+  .box2 p{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 1em;
+  }
+  .box3 p{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 1em;
+  }
+  .box4 p{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-size: 1em;
+  }
+  .box5 p{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 1em;
+  }
+  .box6 p{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width:1024px)
+{
+  .container3
+  {
+    height: 299vh;
+    display: grid;
+  grid-template-columns: 0.15fr 2fr;
+  grid-template-rows: 0.2fr 0.25fr 0.1fr 0.8fr 0.1fr 0.6fr;
+  grid-template-areas: "header header"
+  "navbar main"
+  "navbar heading1"
+  "navbar product"
+  "navbar heading2"
+  "navbar final-section";
+  text-align: center;
+  font-size: 1.5rem;
+  }
+  .final-section {
+    grid-area: final-section;
+    display: flex;
+    justify-content:space-around;
+    width: 700px; 
+    margin: auto;
+  }
+  .product {
+    width: 280px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #faf7f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+  .box1 p{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    /* font-size: 1.3em; */
+  }
+  .box4 p{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    /* font-size: 1.3em; */
+  }
+  .container1{
+    display: grid;
+    height: 110vh;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 0.2fr 0.2fr 2fr;
+    grid-template-areas: "header header"
+    "navbar main"
+    "navbar slider";
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #slider{  
+    width:800px;  
+    height:520px;  
+    overflow:hidden;  
+    margin-left: 5%;
+    margin-top: 1%;
+  }  
+  .slides{  
+    display:block;  
+    width:6000px;  
+    height:400px;  
+    margin-left:0;  
+    padding:0;  
+  }  
+  .slide{  
+    /* float:left;   */
+    list-style-type:none;  
+    width:600px;  
+  }  
+  img
+  {  
+    width:400px;  
+    height:540px;
+    object-fit: contain;
+  }  
+  
+}
+@media only screen and (max-width:768px)
+{
+  .container3
+  {
+    height: 399vh;
+    display: grid;
+  grid-template-columns: 0.15fr 2fr;
+  grid-template-rows: 0.2fr 0.25fr 0.1fr 0.8fr 0.0fr 0.6fr;
+  grid-template-areas: "header header"
+  "navbar main"
+  "navbar heading1"
+  "navbar product"
+  "navbar heading2"
+  "navbar final-section";
+  text-align: center;
+  font-size: 1.5rem;
+  }
+  .final-section {
+    grid-area: final-section;
+    display: flex;
+    justify-content:space-around;
+    width: 590px; 
+    margin: auto;
+  }
+  .final-section > div a {
+    font-size: 0.5em;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #04090e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+.heading-edit {
+  font-size: 1.4rem;
+}
+.product-edit {
+  grid-area: heading1;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 20px;
+}
+  .product {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #faf7f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+    .container{
+      display: grid;
+      height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.2fr 0.2fr
+        2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: "header""main""navbar"
+        "Box1""Box2""Box3""Box4""Box5""Box6";
+    }
+    .box1
+{
+    grid-area: Box1;
+    background-image: url('/images/clencer.jpg');
+    background-size: cover;
+    background-position: center; 
+    opacity: 0.9;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    /* position: relative; */
+}
+.box1 p{
+  position: absolute;
+  top: 37%;
+  left: 38%;
+  font-size: 0.8em;
+}
+.box2{
+    background-color: rgb(179, 123, 40);
+    grid-area: Box2;
+    background-image: url('/images/bodyscrub.jpg');
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    background-position: center; 
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    font-size: larger;
+    font-weight: bolder;
+    /* position: relative; */
+    margin: 0px 20px;
+
+}
+.box2 p{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 0.8em;
+}
+.box3
+{
+    grid-area: Box3;
+    background-image: url('/images/eye.jpg');
+    background-size: cover;
+    background-position: center; 
+    /* opacity: 0.8; */
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    /* position: relative; */
+
+}
+.box3 p{
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  font-size: 0.8em;
+}
+.box4
+{
+    grid-area: Box4;
+    background-image: url('/images/cream.webp');
+    background-size: cover;
+    background-position:center; 
+    /* opacity: 0.8; */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    /* position: relative; */
+
+}
+.box4 p{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 0.8em;
+}
+.box5{
+
+    grid-area: Box5;
+    background-image: url('/images/syrum.jpg');
+    background-size: cover;
+    background-position:center;
+    opacity: 0.9;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    /* position: relative; */
+
+}
+.box5 p{
+  position: absolute;
+  top: 42%;
+  left: 74%;
+  font-size: 0.8em;
+}
+.box6
+{
+    grid-area: Box6;
+    background-image: url('/images/facecream.webp');
+    background-size: cover;
+    background-position:center;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    font-weight: bolder;
+    /* position: relative; */
+  
+}
+.box6 p{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 0.8em;
+}
+main{
+  background-color:   #e6e3e3;
+  grid-area: main;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container1
+{
+  display: grid;
+  height: 210vh;
+  grid-template-columns: 2fr;
+  grid-template-rows: 0.0fr 0.0fr 0.0fr 0fr;
+  grid-template-areas: "header"
+  "navbar"
+  "main"
+  "slider";
+  text-align: center;
+  /* font-size: 1.5rem; */
+}
+#slider
+{  
+  width:600px;  
+  height:320px;  
+  overflow:hidden;  
+  margin-left: 10%;
+  /* margin-top: 1%; */
+}  
+.slides{  
+  display:block;  
+  width:6000px;  
+  height:100px;  
+  margin-left:0px;  
+  padding:0;  
+}  
+.slide{  
+  /* float:left;   */
+  list-style-type:none;  
+  width:500px;  
+}  
+img
+{  
+  width:500px;  
+  height:300px;
+  object-fit: contain;
+}  
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  /* width: 1000px; */
+}
+.site-footer {
+  background-image: linear-gradient(120deg,  #6b259d 1%, #f18e9d 100%);
+  margin: 0%;
+  padding: 0%;
+  /* width: 1000px; */
+}
+h1.site-title{
+  font-size: 1.3em;
+}
+li a{
+  font-size: 0.6em;
+}
+main h3{
+  font-size: 1em;
+}
+.navig h3{
+  padding-top: 0%;
+  margin: 0%;
+}
+.logo img{
+  height: 150px;
+}
+}
+@media only screen and (min-width:425px) and (max-width:767px)
+{
+  .container3
+  {
+    height: 610vh;
+    display: grid;
+  grid-template-columns: 0.0fr 3fr;
+  grid-template-rows: 0.2fr 0.25fr 0.1fr 0.8fr 0.0fr 0.6fr;
+  grid-template-areas: "header header"
+  "navbar navbar"
+  "main main"
+  "heading1 heading1"
+  "product product"
+  "heading2 heading2"
+  "final-section final-section";
+  text-align: center;
+  font-size: 1.5rem;
+  }
+  .final-section {
+    grid-area: final-section;
+    display: flex;
+    justify-content:space-around;
+    width: 400px; 
+    margin: auto;
+  }
+  .box1 p{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    font-size: 0.8em;
+  }
+  .box2 p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 0.8em;
+  }
+  .box3 p{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    font-size: 0.8em;
+  }
+  .box4 p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 0.8em;
+  }
+  .box5 p{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    font-size: 0.8em;
+  }
+  .box6 p{
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    font-size: 0.8em;
+  }
+  .container1
+  {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.0fr 0.0fr 0.0fr 0.0fr;
+    grid-template-areas: "header"
+    "navbar"
+    "main"
+    "slider";
+    text-align: center;
+    /* font-size: 1.5rem; */
+  }
+  #slider
+  {  
+    width:340px;  
+    height:320px;  
+    overflow:hidden;  
+    margin-left: 10%;
+    /* margin-top: 1%; */
+  }  
+  .slides{  
+    display:block;  
+    width:6000px;  
+    height:100px;  
+    margin-left:0px;  
+    padding:0;  
+  }  
+  .slide{  
+    /* float:left;   */
+    list-style-type:none;  
+    width:500px;  
+  }  
+  img
+  {  
+    width:500px;  
+    height:300px;
+    object-fit: contain;
+  }  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    /* width: 1000px; */
+  }
+  .site-footer {
+    background-image: linear-gradient(120deg,  #6b259d 1%, #f18e9d 100%);
+    margin: 0%;
+    padding: 0%;
+    /* width: 1000px; */
+  }
+  h1.site-title{
+    font-size: 1.3em;
+  }
+  li a{
+    font-size: 0.6em;
+  }
+  main h3{
+    font-size: 1em;
+  }
+  .logo img{
+    padding-left: 22%;
+    padding-right: 100px;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:424px)
+{
+  .container3
+  {
+    height: 632vh;
+    display: grid;
+  grid-template-columns: 0.0fr 3fr;
+  grid-template-rows: 0.2fr 0.25fr 0.1fr 0.8fr 0.0fr 0.0fr;
+  grid-template-areas: "header header"
+  "navbar navbar"
+  "main main"
+  "heading1 heading1"
+  "product product"
+  "heading2 heading2"
+  "final-section final-section";
+  text-align: center;
+  font-size: 1.5rem;
+  }
+  .heading-edit {
+    font-size: 1.4rem;
+    margin-bottom: 1%;
+}
+  .final-section {
+    grid-area: final-section;
+    display: flex;
+    justify-content:space-around;
+    width: 325px; 
+    margin: auto;
+  }
+  .box1 p{
+    position: absolute;
+    top: 48%;
+    left: 33%;
+    /* font-size: 1.3em; */
+    font-size: 0.6em;
+  }
+  .box2 p{
+    position: absolute;
+    top: 48%;
+    left: 13%;
+    /* font-size: 1.3em; */
+    font-size: 0.6em;
+  }
+  .box3 p{
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    /* font-size: 1.3em; */
+    font-size: 0.6em;
+  }
+  .box4 p{
+    position: absolute;
+    top: 48%;
+    left: 33%;
+    /* font-size: 1.3em; */
+    font-size: 0.6em;
+  }
+  .box5 p{
+    position: absolute;
+    top: 44%;
+    left: 33%;
+    /* font-size: 1.3em; */
+    font-size: 0.6em;
+  }
+  .box6 p{
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    /* font-size: 1.3em; */
+    font-size: 0.6em;
+  }
+  .navig h3{
+    padding-top: 0%;
+  }
+  .container1
+  {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.0fr 0.0fr 0.0fr 0.0fr;
+    grid-template-areas: "header"
+    "navbar"
+    "main"
+    "slider";
+    text-align: center;
+    /* font-size: 1.5rem; */
+  }
+  #slider
+  {  
+    width:250px;  
+    height:320px;  
+    overflow:hidden;  
+    margin-left: 10%;
+    /* margin-top: 1%; */
+  }  
+  .slides{  
+    display:block;  
+    width:6000px;  
+    height:100px;  
+    margin-left:0px;  
+    padding:0;  
+  }  
+  .slide{  
+    /* float:left;   */
+    list-style-type:none;  
+    width:500px;  
+  }  
+  img
+  {  
+    width:500px;  
+    height:300px;
+    object-fit: contain;
+  }  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    /* width: 1000px; */
+  }
+  .site-footer {
+    background-image: linear-gradient(120deg,  #6b259d 1%, #f18e9d 100%);
+    margin: 0%;
+    padding: 0%;
+    /* width: 1000px; */
+  }
+  h1.site-title{
+    font-size: 1.3em;
+  }
+  li a{
+    font-size: 0.6em;
+  }
+  main h3{
+    font-size: 1em;
+  }
+  .login-page{
+    width: 500px;
+    height: 500px;
+  }
+}
+.login-main{
+  text-align: center;
+  padding-top: 0%;
+  height: 78px;
+  font-size: 1.3em;
+  background-color: rgb(239, 208, 228);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); 
+}
+.button1{
+  background-color: #6a62d2;
+  margin-top: 15px;
+  width:max-content;
+  margin-left: 45%;
+  padding: 15px;
+  border-radius:3%;
+}
+.button1 a{
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  
+}
